@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./App.css";
 
-const API_URL = process.env.API_URL || 'http://localhost:3300'
+const API_URL = import.meta.env.API_URL || "http://localhost:3300";
 
 function App() {
   const [language, setLanguage] = useState("python");
