@@ -1,0 +1,124 @@
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App {
+  display: flex;
+  background-color: #fcf3cf;
+  border: 2px solid #f1c40f;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+#heading {
+  font-size: 30px;
+  color: #f1c40f;
+  text-align: center;
+}
+
+.left-panel,
+.right-panel {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcf3cf;
+}
+
+/* Style for the left panel */
+.left-panel {
+  flex: 1; /* 70% of the available space */
+  border-right: 2px solid #f1c40f;
+}
+
+.left-panel h1 {
+  color: #f1c40f;
+  margin-bottom: 20px;
+}
+
+.left-panel label {
+  color: #f1c40f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.left-panel select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #f1c40f;
+  border-radius: 5px;
+}
+
+.left-panel textarea {
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #f1c40f;
+  border-radius: 5px;
+}
+
+.left-panel button {
+  background-color: #f1c40f;
+  color: #fcf3cf;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.left-panel button:hover {
+  background-color: #ffd700;
+  transition: background-color 0.3s ease;
+}
+
+/* Style for the right panel (output card) */
+.right-panel {
+  flex: 1; /* 30% of the available space */
+  border-left: 2px solid #f1c40f;
+}
+
+.right-panel h1 {
+  color: #f1c40f;
+  margin-bottom: 20px;
+}
+
+.right-panel .output {
+  background-color: #fcf3cf;
+  border: 2px solid #f1c40f;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #333;
+}
+#outputDiv {
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #f1c40f;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 84px;
+  overflow-y: scroll;
+}
+
+.output-code {
+  text-align: justify;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
