@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import "./App.css";
 
+const API_URL = process.env.API_URL || 'http://localhost:3300'
+
 function App() {
   const [language, setLanguage] = useState("python");
   const [sourceCode, setSourceCode] = useState("");
@@ -23,7 +25,7 @@ function App() {
     setExplanation(null);
 
     try {
-      const response = await fetch("http://localhost:3300/api/code-quality", {
+      const response = await fetch(`${API_URL}/api/code-quality`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +50,7 @@ function App() {
     setQuality(null);
     setExplanation(null);
     try {
-      const response = await fetch("http://localhost:3300/api/debug", {
+      const response = await fetch(`${API_URL}/api/debug`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -73,7 +75,7 @@ function App() {
     setQuality(null);
     setExplanation(null);
     try {
-      const response = await fetch("http://localhost:3300/api/convert", {
+      const response = await fetch(`${API_URL}/api/convert`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
